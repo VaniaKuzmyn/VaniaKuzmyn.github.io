@@ -1,0 +1,115 @@
+.section_3{
+
+}
+
+.folk {
+    padding: 25px 10px;
+    text-align: center;
+
+    &-img {
+    }
+
+    &-i {
+        color: #fff;
+        font-size: 60px;
+        padding: 60px;
+        background-color: #e8f8f4;
+        border: 1px solid #e6e6e6;
+        box-shadow: inset 0px 0px 5px 5px rgba(#f2f2f2, 0.7);
+        border-radius: 50%;
+    }
+
+    &-outer {
+        margin-top: 140px;
+    }
+
+    &-name {
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: #0d0d0d;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &-profession {
+        margin-top: 10px;
+        color: #999999;
+        font-size: 15px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 4px;
+            background-color: #cccccc;
+        }
+    }
+
+    &-desc {
+        color: #737373;
+    }
+
+    &:hover {
+        background-color: #f0f0f0;
+
+        & .folk-profession:after {
+            background-color: #e74c3c;
+        }
+    }
+}
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    &-item {
+        color: #999999;
+        margin: 0 7px;
+
+        &:hover {
+           color: #f39c12;
+           cursor: pointer;
+        }
+    }
+}
+
+.merit {
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+
+    &-outer {
+        background: url('../images/bg/headerbg.png') center center;
+        background-size: cover;
+        background-color: #000000;
+        padding: 180px 0 220px;
+        clip-path: polygon(0 13%, 100% 2%, 100% 87%, 0 94%);
+    }
+
+    &-i {
+        padding: 50px;
+        border: 2px solid #f39c12;
+        border-radius: 50%;
+    }
+
+    &-sum {
+        &-strong {
+            font-size: 45px;
+        }
+    }
+
+    &:hover {
+        & .merit-i {
+            border: 2px solid #fff;
+            color: #f39c12;
+        }
+
+        & .merit-sum {
+            color: #f39c12;
+        }
+    }
+}
